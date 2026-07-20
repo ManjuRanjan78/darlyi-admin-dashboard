@@ -353,9 +353,24 @@ export const CommonPage = () => {
       })
       .then((res) => {
         if (res.data.status) {
+          console.log(
+            "Before API:",
+            JSON.parse(localStorage.getItem("LiveStreamAdminDetails"))
+          );
+          const updatedDetails = {
+            ...userDetails,
+            data: res.data.data || res.data.details || userDetails?.data,
+            details: res.data.details || userDetails?.details,
+            status: res.data.status,
+            token: userDetails?.token,
+          };
           localStorage.setItem(
             "LiveStreamAdminDetails",
-            JSON.stringify(res.data),
+            JSON.stringify(updatedDetails)
+          );
+          console.log(
+            "After Save:",
+            JSON.parse(localStorage.getItem("LiveStreamAdminDetails"))
           );
         } else {
           localStorage.removeItem("LiveStreamAdminDetails");
