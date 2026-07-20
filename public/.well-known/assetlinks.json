@@ -1,0 +1,28 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.hikizo.togilo.app",
+      "sha256_cert_fingerprints": [
+        "B9:19:84:7A:41:68:EE:CF:57:C1:59:63:1F:D2:C3:E9:5B:3A:F4:E8:78:AD:46:F4:A1:6C:A0:2A:E6:8A:8F:E6"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.hikizo.flirty_voices",
+      "sha256_cert_fingerprints": [
+        "8C:2A:EE:F7:B1:61:11:A5:18:9D:9F:E7:EA:A6:14:4E:FB:1D:DA:02:C0:25:B2:64:EA:D2:38:0E:C0:C7:36:5D"
+      ]
+    }
+  }
+]
